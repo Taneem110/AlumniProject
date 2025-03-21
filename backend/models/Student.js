@@ -10,6 +10,10 @@ const StudentProfileSchema = new mongoose.Schema({
     current_status: { type: String, enum: ['Active', 'Graduated', 'On Leave', 'Dropped Out'], default: 'Active' },
     profile_picture: { type: String },
     contact_address: { type: String, maxlength: 255 },
+<<<<<<< HEAD
+=======
+    academic_status: { type: String, enum: ['Good Standing', 'Probation', 'Suspended'], default: 'Good Standing' },
+>>>>>>> b4cfbf80b20274a41b966d809bdba148df8fb61a
     created_at: { type: Date, default: Date.now },
     timestamps: true
   });
